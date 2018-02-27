@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Антон Родин](https://up.htmlacademy.ru/htmlcss/20/user/606973).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Варганов](https://htmlacademy.ru/profile/varganov_d).
 
 ---
 

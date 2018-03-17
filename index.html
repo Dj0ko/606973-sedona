@@ -66,8 +66,29 @@
               <p class="searching-info">Укажите предполагаемые даты поездки,<br>
                   и мы покажем вам лучшие предложения гостиниц в Седоне</p>
               <a class="button" href=#>Поиск гостиницы в Седоне</a>
-              <form action="/echo" method="get">
+              <form class="searching-form" action="/echo" method="get">
+                  <p class="searching-item">
+                    <label for="arrival-date">Дата заезда:</label>
+                    <input type="date" name="arrival-date" id="arrival-date">
+                  </p>
+                  <p class="searching-item">
+                      <label for="date-of-departure">Дата выезда:</label>
+                      <input type="date" name="date-of-departure" id="date-of-departure">
+                  </p>
+                  <p class="searching-item">
+                      <label for="amount-of-adults">Взрослые:</label>
+                      <button type="button" class="button">Меньше</button>
+                      <input type="number" id="amount-of-adults">
+                      <button type="button" class="button">Больше</button>
+                  </p>
+                  <p class="searching-item">
+                      <label for="amount-of-children">Дети:</label>
+                      <button type="button" class="button">Меньше</button>
+                      <input type="number" id="amount-of-children">
+                      <button type="button" class="button">Больше</button>
+                  </p>
               </form>
+              <a class="button" href=#>Найти</a>
           </section>
           <section class="map">
               <img width="1200" height="594" src="img/map.jpg" alt="Карта штата">

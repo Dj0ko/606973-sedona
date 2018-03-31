@@ -55,7 +55,6 @@ a {
 }
 
 .main-header {
-    margin-bottom: 62px;
     min-height: 564px;
 
     background-image: url("../img/intro-text.png"), url("../img/background-photo.jpg");
@@ -93,7 +92,7 @@ a {
 }
 
 .site-navigation li {
-    width: 237px;
+    width: 168px;
 }
 
 .site-navigation-left {
@@ -101,16 +100,19 @@ a {
     padding-left: 72px;
 }
 
+.site-navigation-margin {
+    margin-right: 240px;
+}
+
 .site-navigation-right {
     text-align: right;
     padding-right: 72px;
-
 }
 
 .site-navigation a {
     display: inline-block;
     padding-top: 14px;
-    padding-bottom: 18px;
+    padding-bottom: 16px;
 
     vertical-align: middle;
     color: #000000;
@@ -128,9 +130,14 @@ a {
     color: #d1cbc7;
 }
 
+.container {
+    padding-top: 60px;
+}
+
 .sedona-info {
     width: 442px;
     margin: 0 auto;
+    margin-bottom: 27px;
 
     font-size: 21px;
     line-height: 26px;
@@ -140,8 +147,7 @@ a {
 }
 
 .features-text {
-    margin-top: 33px;
-    margin-bottom: 53px;
+    margin-bottom: 51px;
 
     line-height: 26px;
     text-align: center;
@@ -152,7 +158,6 @@ a {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    margin-bottom: 56px;
 
     list-style: none;
 }
@@ -164,7 +169,7 @@ a {
 .feature-item h3 {
     width: 160px;
     margin: 0 auto;
-    margin-bottom: 29px;
+    margin-bottom: 24px;
     font-size: 21px;
     line-height: 21px;
     color: #000000;
@@ -177,17 +182,17 @@ a {
 
 .feature-item-text {
     width: 400px;
-    padding-top: 50px;
-    padding-bottom: 65px;
+    padding-top: 47px;
+    padding-bottom: 59px;
 }
 
 .feature-item-description {
     width: 280px;
     margin: 0 auto;
 }
-.sss {
-    margin: 0;
-    margin-bottom: 25px;
+
+.feature-number {
+    margin-bottom: 21px;
 }
 
 .feature-item-blue {
@@ -207,8 +212,8 @@ a {
 
 .feature-extra {
     position: relative;
-    padding-top: 164px;
-    padding-bottom: 85px;
+    padding-top: 161px;
+    padding-bottom: 82px;
 }
 
 .feature-extra-first::before {
@@ -232,8 +237,8 @@ a {
 
     position: absolute;
     transform: translateX(-50%);
-    top: 60px;
-    left: 50%;
+    top: 61px;
+    left: 198px;
 
     width: 74px;
     height: 70px;
@@ -248,7 +253,7 @@ a {
 
     position: absolute;
     transform: translateX(-50%);
-    top: 60px;
+    top: 56px;
     left: 50%;
 
     width: 64px;
@@ -277,7 +282,8 @@ a {
 
 .searching-text {
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+    padding-top: 50px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -286,7 +292,7 @@ a {
 
 .searching-info {
     margin: 0;
-    margin-bottom: 48px;
+    margin-bottom: 47px;
 
     line-height: 24px;
 }
@@ -303,6 +309,7 @@ a {
     box-sizing: border-box;
     box-shadow: 0 0 15px 7px rgba(0,1,1,0.15);
     background-color: #ffffff;
+    z-index: 1;
 }
 
 .searching-item {
@@ -317,46 +324,46 @@ a {
     color: #000000;
 }
 
-.searching-arrival label {
+.searching-item-full-width input {
     display: inline-block;
-    margin-right: 21px;
-}
-
-.searching-arrival input {
-    display: inline-block;
-    width: 348px;
+    width: 346px;
     box-sizing: border-box;
     padding: 6px 14px;
+    padding-right: 30px;
+    text-transform: inherit;
 }
 
-.searching-arrival {
+.searching-item-full-width {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
     position: relative;
 }
 
-.searching-arrival::after {
-    content: "";
-
+.button-calendar {
     position: absolute;
     width: 21px;
     height: 22px;
 
-    right: 0px;
-    top: 6px;
-    background-image: url("../img/calendar.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    right: 15px;
+    top: 7px;
+
+    background-color: transparent;
+    border: none;
+    fill: #a9a9a9;
 }
 
-.searching-departure label {
+.button-calendar-text {
     display: inline-block;
-    margin-right: 17px;
 }
 
-.searching-departure input {
-    display: inline-block;
-    width: 348px;
-    box-sizing: border-box;
-    padding: 6px 14px;
+.button-calendar:hover .svg-calendar {
+    fill: #000000;
+}
+
+.button-calendar:active .svg-calendar {
+    fill: #81b3d2;
 }
 
 .searching-adults label {
@@ -374,8 +381,6 @@ a {
 
 .searching-children label {
     display: inline-block;
-    margin-right: 18px;
-    margin-left: 53px;
     margin-right: 27px;
 }
 
@@ -389,6 +394,7 @@ a {
 
 .searching-children {
     margin-left: auto;
+    margin-bottom: 55px;
 }
 
 .searching-form input[type="text"] {
@@ -431,7 +437,7 @@ a {
 }
 
 .button-find {
-    padding: 20px 196px;
+    padding: 16px 196px;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -476,6 +482,7 @@ a {
 
 .button-change {
     display: inline-block;
+    position: relative;
     width: 38px;
     height: 38px;
     color: #a9a9a9;
@@ -483,12 +490,34 @@ a {
     background-color: #f2f2f2;
 }
 
-.button-change:hover {
-    color: #000000;
+.button-change-minus::before,
+.button-change-plus::before,
+.button-change-plus::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 3px;
+    background-color: #a9a9a9;
 }
 
-.button-change:active {
-    color: #81b3d2;
+.button-change-plus::after{
+    width: 3px;
+    height: 12px;
+}
+
+.button-change-minus:hover::before,
+.button-change-plus:hover::before,
+.button-change-plus:hover::after {
+    background-color: #000000;
+}
+
+.button-change-minus:active::before,
+.button-change-plus:active::before,
+.button-change-plus:active::after {
+    background-color: #81b3d2;
 }
 
 .map img{
@@ -496,16 +525,29 @@ a {
     height: 594px;
 }
 
-.main-footer {
+.footer-content-wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 36px 73px;
+    padding: 33px 73px;
+    padding-top: 25px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.main-footer {
+    position: relative;
+    text-align: center;
 }
 
 .footer-hashtag {
-    width: 240px;
-    margin: 0px;
+    display: inline-block;
+    width: 134px;
+    margin: 0;
+    margin-right: 257px;
+    padding-left: 60px;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -513,20 +555,25 @@ a {
 }
 
 .footer-social {
-    width: 150px;
-    text-align: center;
+    margin-right: 229px;
 }
 
 .footer-social ul{
     display: flex;
+    width: 150px;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     list-style: none;
 }
 
 .social-button {
-    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 48px;
 
     background-color: #81b3d2;
 }
@@ -539,22 +586,28 @@ a {
     background-color: #5496bd;
 }
 
+.footer-web {
+    display: inline-block;
+}
 .footer-copyright {
-    width: 240px;
-    margin: 0;
-    text-align: center;
+    display: flex;
+    width: 196px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .button-academy {
-    color: #231f20;
+    display: inline-block;
+    width: 115px;
+    height: 41px;
 }
 
 .button-academy:hover {
-    color: #81b3d2;
+
 }
 
 .button-academy:active {
-    color: #bdbbbc;
+
 }
 
 .filter-form {

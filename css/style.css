@@ -41,6 +41,7 @@ input[type="radio"].visually-hidden {
 .site-wrapper {
     width: 1200px;
     margin: 0 auto;
+    
     background-color: #ffffff;
     background-position: top center;
     -webkit-box-shadow: 0 0 15px 5px rgba(0,1,1,0.2);
@@ -102,8 +103,9 @@ a {
 }
 
 .site-navigation-left {
-    text-align: left;
     padding-left: 72px;
+    
+    text-align: left;
 }
 
 .site-navigation-margin {
@@ -111,8 +113,9 @@ a {
 }
 
 .site-navigation-right {
-    text-align: right;
     padding-right: 72px;
+    
+    text-align: right;
 }
 
 .site-navigation a {
@@ -138,8 +141,9 @@ a {
     width: 1200px;
     height: 57px;
 
-
     background-image: url("../img/pseudo.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .container {
@@ -191,6 +195,7 @@ a {
     width: 160px;
     margin: 0 auto;
     margin-bottom: 24px;
+    
     font-size: 21px;
     line-height: 21px;
     color: #000000;
@@ -214,6 +219,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    
     color: #ffffff;
 
     background-color: #81b3d2;
@@ -229,6 +235,7 @@ a {
 
 .feature-extra {
     position: relative;
+    
     padding-top: 161px;
     padding-bottom: 82px;
 }
@@ -300,6 +307,7 @@ a {
 
 .searching {
     position: relative;
+    
     text-align: center;
 }
 
@@ -307,6 +315,7 @@ a {
     display: inline-block;
     margin-bottom: 24px;
     padding-top: 50px;
+    
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -322,6 +331,7 @@ a {
 
 .button {
     display: inline-block;
+    
     font: inherit;
     text-align: center;
     vertical-align: middle;
@@ -350,6 +360,7 @@ a {
 
 .button-search {
     padding: 30px 139px;
+    
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -361,6 +372,7 @@ a {
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     left: 50%;
+    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -371,6 +383,7 @@ a {
     padding: 55px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    
     -webkit-box-shadow: 0 0 15px 7px rgba(0,1,1,0.15);
             box-shadow: 0 0 15px 7px rgba(0,1,1,0.15);
     background-color: #ffffff;
@@ -408,6 +421,7 @@ a {
             align-items: baseline;
     margin: 0;
     margin-bottom: 29px;
+    
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
@@ -416,6 +430,8 @@ a {
 }
 
 .searching-item-full-width {
+    position: relative;
+    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -425,7 +441,6 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
-    position: relative;
 }
 
 .searching-item-full-width input {
@@ -435,17 +450,18 @@ a {
             box-sizing: border-box;
     padding: 6px 14px;
     padding-right: 30px;
+    
     text-transform: inherit;
 }
 
 .button-calendar {
     position: absolute;
+    right: 9px;
+    top: 8px;
+    
     width: 21px;
     height: 22px;
     padding: 0;
-
-    right: 9px;
-    top: 8px;
 
     background-color: transparent;
     border: none;
@@ -475,6 +491,7 @@ a {
             box-sizing: border-box;
     width: 38px;
     padding: 6px 0;
+    
     text-align: center;
 }
 
@@ -492,16 +509,19 @@ a {
     display: inline-block;
     width: 38px;
     padding: 6px 0;
+    
     text-align: center;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
 
 .button-change {
-    display: inline-block;
     position: relative;
+    
+    display: inline-block;
     width: 38px;
     height: 38px;
+    
     color: #a9a9a9;
 
     background-color: #f2f2f2;
@@ -511,14 +531,17 @@ a {
 .button-change-plus::before,
 .button-change-plus::after {
     content: "";
+    
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    
     width: 12px;
     height: 3px;
+    
     background-color: #a9a9a9;
 }
 
@@ -541,6 +564,7 @@ a {
 
 .button-find {
     padding: 16px 196px;
+    
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -584,6 +608,7 @@ a {
     display: flex;
     padding: 27px 72px;
     padding-bottom: 6px;
+    
     color: #ffffff;
 
     background-color: #ffffff;
@@ -602,6 +627,7 @@ a {
 
 .filter legend {
     margin-bottom: 25px;
+    
     font-size: 16px;
     font-weight: 700;
 }
@@ -609,6 +635,7 @@ a {
 .filter ul {
     margin: 0;
     padding: 0;
+    
     list-style: none;
 }
 
@@ -625,18 +652,20 @@ a {
     position: relative;
     
     display: inline-block; 
+    
     cursor: pointer;
+    user-select: none;
 }
 
 .filter-input +label::before {
     content: "";
+    
     position: absolute;
+    left: -40px;
+    top: -1px;
     
     width: 23px;
     height: 23px;
-    
-    left: -40px;
-    top: -1px;
     
     background-image: url("../img/checkbox-off.svg");
     background-position: 0 0;
@@ -645,13 +674,13 @@ a {
 
 .filter-input:checked + label::before {
     content: "";
+    
     position: absolute;
+    left: -40px;
+    top: -1px;
     
     width: 27px;
     height: 23px;
-    
-    left: -40px;
-    top: -1px;
     
     background-image: url("../img/checkbox-on.svg");
     background-position: 0 0;
@@ -683,9 +712,10 @@ a {
 
 .price-controls {
     position: relative;
-    margin-bottom: 19px;
+    
     padding: 5px 0px;
     padding-left:65px;
+    margin-bottom: 19px;
     
     font-size: 0;
 
@@ -695,6 +725,7 @@ a {
 
 .price-controls::after {
     content: "";
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -756,6 +787,7 @@ a {
 .range-toggle {
     position: absolute;
     top: -9px;
+    
     width: 4px;
     height: 4px;
 
@@ -808,6 +840,7 @@ a {
             align-items: flex-end;
     padding-top: 30px;
     padding-bottom: 30px;
+    
     border-bottom: 1px solid #e3e3e3;
 }
 
@@ -815,6 +848,7 @@ a {
     width: 135px;
     padding-left: 73px;
     margin-right: 30px;
+    
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -823,6 +857,7 @@ a {
 .sorting-text {
     width: 91px;
     margin-right: 22px;
+    
     font-size: 12px;
     line-height: 18px;
 }
@@ -836,6 +871,7 @@ a {
             justify-content: space-between;
     margin: 0;
     padding: 0;
+    
     font-size: 12px;
     line-height: 18px;
 
@@ -845,6 +881,7 @@ a {
 .booking-sorting-list a {
     display: inline-block;
     margin-right: 33px;
+    
     color: rgba(0,0,0,0.3);
 
     border-bottom: 1px dotted #81b3d2;
@@ -877,6 +914,7 @@ a {
     padding: 0;
     padding-right: 73px;
     margin-left: auto;
+    
     list-style: none;
 }
 
@@ -884,6 +922,7 @@ a {
     display: inline-block;
     width: 0;
     height: 0;
+    
     border: 10px solid #cacaca;
     border-left-color: transparent;
     border-left-width: 6px;
@@ -930,6 +969,7 @@ a {
             flex-direction: column;
     margin: 0;
     padding: 0;
+    
     list-style: none;
 }
 
@@ -939,14 +979,15 @@ a {
     display: flex;
     padding: 30px 73px;
     padding-top: 25px;
+    
     border-bottom: 1px solid #e3e3e3;
 }
 
 .booking-list img {
     display: inline-block;
-    margin-top: 5px;
     width: 135px;
     height: 90px;
+    margin-top: 5px;
 }
 
 .booking-item-info {
@@ -1013,6 +1054,7 @@ a {
             justify-content: space-between;
     margin: 0;
     padding: 0;
+    
     list-style: none;
 }
 
@@ -1020,6 +1062,7 @@ a {
     position: relative;
     
     display: inline-block;
+    
     cursor: pointer;
 }
 
@@ -1046,16 +1089,24 @@ a {
 .booking-item-rate {
     margin: 0;
     padding: 3px 13px;
+    
     text-align: center;
+    
     background-color: #f2f2f2;
 }
 
 .main-footer {
     position: relative;
+    
     text-align: center;
 }
 
 .footer-content-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1064,15 +1115,13 @@ a {
             align-items: center;
     padding: 27px 73px;
     padding-top: 25px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    
     background-color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-hotels-content-wrapper {
     position: static;
+    
     background-color: #ffffff;
 }
 
@@ -1082,6 +1131,7 @@ a {
     margin: 0;
     margin-right: 257px;
     margin-left: 60px;
+    
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -1104,6 +1154,7 @@ a {
             justify-content: space-between;
     margin: 0 auto;
     padding: 0;
+    
     list-style: none;
 }
 

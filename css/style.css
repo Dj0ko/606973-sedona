@@ -48,7 +48,7 @@ input[type="radio"].visually-hidden {
             box-shadow: 0 0 15px 5px rgba(0,1,1,0.2);
 }
 
-a {
+.site-wrapper a {
     text-decoration: none;
 }
 
@@ -59,6 +59,7 @@ a {
     background-size: auto, auto;
     background-position: center 132px, top left;
     background-repeat: no-repeat, no-repeat;
+    background-color: #596e84;
 }
 
 .main-header-logo {
@@ -144,6 +145,7 @@ a {
     background-image: url("../img/pseudo.png");
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-color: #ffffff;
 }
 
 .sedona-info {
@@ -253,6 +255,7 @@ a {
     background-image: url("../img/icon-1.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-color: #ffffff;
 }
 
 .feature-extra-second::before {
@@ -271,6 +274,7 @@ a {
     background-image: url("../img/icon-3.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-color: #ffffff;
 }
 
 .feature-extra-third::before {
@@ -289,6 +293,7 @@ a {
     background-image: url("../img/icon-2.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-color: #ffffff;
 }
 
 .feature-extra .feature-item-description {
@@ -600,6 +605,16 @@ a {
 
 .map {
     height: 594px;
+}
+
+.map-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 593px;
 }
 
 .map img{
@@ -1096,6 +1111,7 @@ a {
     background-image: url("../img/star.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
+    background-color: #ffffff;
 }
 
 .booking-item-rate {
@@ -1171,19 +1187,58 @@ a {
 }
 
 .social-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    position: relative;
+    
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    
+    background-color: #81b3d2;
+}
+
+.social-button-twitter::before {
+    content: "";
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    
     width: 46px;
     height: 48px;
+    
+    background-image: url("../img/twitter.svg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
 
-    background-color: #81b3d2;
+.social-button-facebook::before {
+    content: "";
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 46px;
+    height: 48px;
+    
+    background-image: url("../img/fb-icon.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.social-button-youtube::before {
+    content: "";
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 46px;
+    height: 48px;
+    
+    background-image: url("../img/youtube.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 
 .social-button:hover {
@@ -1194,13 +1249,14 @@ a {
     background-color: #5496bd;
 }
 
-.social-button:active .social-svg {
+.social-button:active::before {
     opacity: 0.3;
 }
 
 .footer-web {
     display: inline-block;
 }
+
 .footer-copyright {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1225,5 +1281,6 @@ a {
 }
 
 .button-academy:active .svg-academy {
-    fill: #bdbbbc;
+    fill: #000000;
+    opacity: 0.5;
 }

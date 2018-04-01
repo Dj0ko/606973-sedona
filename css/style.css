@@ -121,6 +121,8 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a {
     display: inline-block;
+    
+    vertical-align: middle;
 
     color: #000000;
 }
@@ -145,7 +147,6 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/pseudo.png");
     background-repeat: no-repeat;
     background-position: 0 0;
-    background-color: #ffffff;
 }
 
 .sedona-info {
@@ -317,6 +318,7 @@ input[type="radio"].visually-hidden {
     display: inline-block;
     margin-bottom: 24px;
     padding-top: 50px;
+    vertical-align: middle;
     
     font-size: 30px;
     line-height: 36px;
@@ -455,6 +457,7 @@ input[type="radio"].visually-hidden {
     padding-right: 30px;
     margin-left: auto;
     
+    vertical-align: middle;
     text-transform: inherit;
 }
 
@@ -482,6 +485,8 @@ input[type="radio"].visually-hidden {
 
 .button-calendar-text {
     display: inline-block;
+    
+    vertical-align: middle;
 }
 
 .button-calendar:hover .svg-calendar {
@@ -495,6 +500,8 @@ input[type="radio"].visually-hidden {
 .searching-adults label {
     display: inline-block;
     margin-right: 40px;
+    
+    vertical-align: middle;
 }
 
 .searching-adults input {
@@ -506,6 +513,7 @@ input[type="radio"].visually-hidden {
     padding: 6px 0;
     
     text-align: center;
+    vertical-align: middle;
 }
 
 .searching-children {
@@ -516,6 +524,8 @@ input[type="radio"].visually-hidden {
 .searching-children label {
     display: inline-block;
     margin-right: 27px;
+    
+    vertical-align: middle;
 }
 
 .searching-children input {
@@ -524,6 +534,7 @@ input[type="radio"].visually-hidden {
     min-height: 38px;
     padding: 6px 0;
     
+    vertical-align: middle;
     text-align: center;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -535,6 +546,8 @@ input[type="radio"].visually-hidden {
     display: inline-block;
     width: 38px;
     height: 38px;
+    
+    vertical-align: middle;
     
     color: #a9a9a9;
 
@@ -677,6 +690,7 @@ input[type="radio"].visually-hidden {
     
     display: inline-block; 
     
+    vertical-align: middle;
     cursor: pointer;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -845,6 +859,7 @@ input[type="radio"].visually-hidden {
 
     color: #ffffff;
     text-transform: inherit;
+    vertical-align: middle;
 
     background: transparent;
     border: 2px solid #ffffff;
@@ -909,6 +924,7 @@ input[type="radio"].visually-hidden {
     display: inline-block;
     margin-right: 33px;
     
+    vertical-align: middle;
     color: rgba(0,0,0,0.3);
 
     border-bottom: 1px dotted #81b3d2;
@@ -950,6 +966,7 @@ input[type="radio"].visually-hidden {
     width: 0;
     height: 0;
     
+    vertical-align: middle;
     border: 10px solid #cacaca;
     border-left-color: transparent;
     border-left-width: 6px;
@@ -1015,6 +1032,8 @@ input[type="radio"].visually-hidden {
     width: 135px;
     height: 90px;
     margin-top: 5px;
+    
+    vertical-align: middle;
 }
 
 .booking-item-info {
@@ -1048,6 +1067,8 @@ input[type="radio"].visually-hidden {
 .booking-kind {
     display: inline-block;
     min-width: 110px;
+    
+    vertical-align: middle;
 }
 
 .button-item {
@@ -1090,12 +1111,15 @@ input[type="radio"].visually-hidden {
     
     display: inline-block;
     
+    vertical-align: middle;
     cursor: pointer;
 }
 
 .booking-item-option-text {
     display: inline-block;
     width: 18px;
+    
+    vertical-align: middle;
 }
 
 .icon-star:checked + label::before {
@@ -1164,6 +1188,7 @@ input[type="radio"].visually-hidden {
     line-height: 26px;
     font-weight: 700;
     color: #000000;
+    vertical-align: middle;
 }
 
 .footer-social {
@@ -1192,6 +1217,8 @@ input[type="radio"].visually-hidden {
     display: inline-block;
     width: 48px;
     height: 48px;
+    
+    vertical-align: middle;
     
     background-color: #81b3d2;
 }
@@ -1255,6 +1282,8 @@ input[type="radio"].visually-hidden {
 
 .footer-web {
     display: inline-block;
+    
+    vertical-align: middle;
 }
 
 .footer-copyright {
@@ -1274,6 +1303,8 @@ input[type="radio"].visually-hidden {
     display: inline-block;
     width: 115px;
     height: 41px;
+    
+    vertical-align: middle;
 }
 
 .button-academy:hover .svg-academy {

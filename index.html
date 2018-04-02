@@ -94,7 +94,8 @@
                   <p class="searching-info">Укажите предполагаемые даты поездки,<br>
                       и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                   <a class="button button-brown button-search" href="#">Поиск гостиницы в Седоне</a>
-                  <form class="searching-form searching-form-change" action="/echo" method="get">
+                  <div class="modal modal-change">
+                  <form class="searching-form" action="/echo" method="get">
                       <p class="searching-item searching-item-full-width">
                         <label for="arrival-date">Дата заезда:</label>
                         <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2017">
@@ -123,6 +124,7 @@
                       </p>
                       <button type="submit" class="button button-blue button-find">Найти</button>
                   </form>
+                </div>
               </section>
           </main>
           
@@ -155,6 +157,28 @@
             </div>
           </footer>
       </div>
-      <script src="js/script.js"></script>
+      <script>
+        var btnWindowChangeType = document.querySelector(".button-search");
+
+        var popup = document.querySelector(".modal");
+          
+        var form = popup.querySelector("form");
+          
+        var arrival = popup.querySelector("[name=arrival-date]");
+          
+        var departure = popup.querySelector("[name=departure-date]");
+
+        btnWindowChangeType.addEventListener("click", function (evt) {
+            evt.preventDefault();  
+            popup.classList.toggle("modal-change");
+            arrival.focus();
+        });  
+        form.addEventListener("submit", function (evt) {
+            if (!arrival.value || !departure.value) {
+                evt.preventDefault();
+                console.log("Необходимо ввести дату заезда и дату выезда");
+            }   
+        });    
+      </script>
   </body>
 </html>

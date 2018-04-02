@@ -310,6 +310,7 @@ input[type="radio"].visually-hidden {
 
 .searching {
     position: relative;
+    z-index: 5;
     
     text-align: center;
 }
@@ -375,6 +376,10 @@ input[type="radio"].visually-hidden {
     100% { transform: translateY(0); }
 }
 
+.modal {
+    animation: bounce 1s;
+}
+
 .searching-form {
     position: absolute;
     -webkit-transform: translateX(-50%);
@@ -397,11 +402,9 @@ input[type="radio"].visually-hidden {
             box-shadow: 0 0 15px 7px rgba(0, 1, 1, 0.15);
     background-color: #ffffff;
     z-index: 1;
-    
-    animation: bounce 1s;
 }
 
-.searching-form-change {
+.modal-change {
     display: none;  
 }
 
